@@ -1,5 +1,3 @@
-version: '0.1'
-
 services:
   app:
     image: zhukata/devops-for-programmers-project-74
