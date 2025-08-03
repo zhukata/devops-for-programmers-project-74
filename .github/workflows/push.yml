@@ -35,4 +35,4 @@ jobs:
 
       - name: Test
         run: |
-          docker run --rm ${{ env.APP_IMAGE_NAME }} make test
+          make ci
