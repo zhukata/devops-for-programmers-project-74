@@ -1,0 +1,12 @@
+version: '0.1'
+
+services:
+  app:
+    build:
+      context: /app
+      dockerfile: Dockerfile
+    command: "make dev"
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app/:/app
