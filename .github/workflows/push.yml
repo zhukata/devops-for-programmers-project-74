@@ -34,4 +34,5 @@ jobs:
           tags: ${{ env.APP_IMAGE_NAME }}
 
       - name: Test
-        run: make ci
+        run: |
+          docker run --rm ${{ env.APP_IMAGE_NAME }} make test
